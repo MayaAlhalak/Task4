@@ -1,0 +1,79 @@
+.Hero{
+    background-color: rgba(239, 248, 255, 1);
+    height: 100vh;
+    position: relative;
+    background-image: url('../../../public/assets/image/modern-residential-building-transformed 1.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.Hero{
+    .BoxAll{
+        position: absolute;
+        top: 122px;
+        width: 40.190336%;
+        z-index: 2;
+        h1{
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 80px;
+            color: rgba(34, 34, 34, 1);
+            margin-bottom: 20px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color:rgba(34, 34, 34, 0.5);
+        }
+    }
+}
+.AllCard{
+    position: absolute;
+     z-index: 2;
+    top: 404px;
+    background-color: #FFFFFFCC;
+    backdrop-filter: blur(16px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 58px;
+    gap: 63.68px;
+    border-radius: 16px;
+}
+@media (max-width:992px) {
+   .Hero {
+    background-size: contain;
+    .BoxAll{
+        width: 88.88888888%;
+        top: 132px;
+        h1{
+            font-size: 35px;
+            line-height: 46px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+   }
+   .AllCard{
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+    top: 339px;
+    padding: 20px;
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+   }
+   .Hero .imgBack{
+    top: 351px;
+
+   }
+}
+@media (max-width:1270px) and (min-width: 992px)  {
+    .AllCard{
+        top:470px ;
+    }
+}

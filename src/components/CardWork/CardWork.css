@@ -1,0 +1,27 @@
+.CardWork{
+    padding: 30px 40px 80px 40px;
+   
+    h3{
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 100%;
+        color:  rgba(34, 34, 34, 1);
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(34, 34, 34, 0.5);
+    }
+    .svg{
+        color: rgba(2, 85, 149, 1);
+    }
+}
+@media (max-width:992px) {
+   .CardWork{
+    padding: 15px 17.5px 28px 17.5px;
+   }
+    
+}

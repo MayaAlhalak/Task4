@@ -1,0 +1,13 @@
+.AllCardTrending{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 25px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+@media (max-width:992px) {
+ .AllCardTrending{
+    gap: 20px;
+ }   
+}

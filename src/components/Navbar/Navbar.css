@@ -1,0 +1,113 @@
+.Nav{
+  position: fixed;
+  z-index: 1000;
+    width: 100%;
+}
+.NavBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   padding-top: 17px;
+    padding-bottom: 17px;
+        .Ul1{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 100%;
+                    color: rgba(34, 34, 34, 1);
+                }
+            }
+        }
+        button{
+            padding: 10.5px 49px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            text-align: center;
+            background-color: rgba(2, 85, 149, 1);
+            border: none;
+            border-radius: 6px;
+            color: rgba(245, 245, 245, 1);
+
+        }
+        .logo2{
+            display: none;
+        }
+        
+}
+.Ul2{
+            display: none;
+            align-items: center;
+            align-items: center;
+            flex-direction: column; 
+            margin-top: 32px;
+            background-color: rgb(255, 255, 255);
+            ul{
+                margin-bottom: 62px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 32px;
+                width: 100%;
+                li{
+                    width: 100%;
+                    list-style: none;
+                    border-bottom: 1px solid rgba(0, 0, 0, 1);
+                    border-top: 1px solid rgba(0, 0, 0, 1);
+                        a{
+                            font-weight: 400;
+                            font-size: 24px;
+                            line-height: 64px;
+                            letter-spacing: 0px;
+                            vertical-align: middle;
+                            text-decoration: none;
+                            color: rgba(34, 34, 34, 1);
+                            padding: 24px 20px;
+                        }
+            }
+            }
+            button{
+                background: rgba(2, 85, 149, 1);
+                border-radius: 6px;
+                border: none;
+                padding: 10.5px 69px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 100%;
+                text-align: center;
+                color: rgba(245, 245, 245, 1);
+                margin-bottom: 73.5px;
+            }
+          
+
+        }
+        .OpenUl{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .scrollDown{
+            background-color: white;
+        }
+
+@media (max-width: 992px) {
+    .NavBar .Ul1 , .NavBar  button{
+        display: none;
+    }
+    .NavBar .logo{
+        width: 46px;
+        height: 35px;
+    }
+    .NavBar .logo2 {
+        display: block;
+    }
+   
+}

@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter" , sans-serif;
+}
+
+.padding {
+  padding: 0px 70px;
+}
+.margin{
+  margin-top: 94px;
+}
+.marginTop{
+  margin-top: 56px;
+}
+.scroll{
+    scroll-margin-top: 90px;
+}
+@media (max-width:992px) {
+  .padding {
+    padding: 0px 20px;
+  }
+  .margin{
+    margin-top: 64px;
+  }
+  .marginTop{
+  margin-top: 42px;
+}
+}

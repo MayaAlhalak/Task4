@@ -1,0 +1,106 @@
+.Best{
+    margin-top: 56px;
+    .TopBest{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 50px;
+        p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        }
+    }
+    .CardBest{
+        margin-top: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 31px;
+            .btnCard{
+                position: relative;
+            .btns{
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                position: absolute;
+                top: 14px;
+                left: 14px;
+                    button{
+                            border: none;
+                            border-radius: 5px;
+                            border: 1px solid rgba(255, 255, 255, 1);
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 100%;
+                            color:rgba(255, 255, 255, 1);
+                            background-color: rgba(34, 34, 34, 0.4);      
+                    }
+                    .btns1{
+                        padding: 6px 12px;
+                    }
+                    .btns2{
+                        padding: 6px;
+                    }
+                    }
+            }
+          
+    }
+}
+.Best {
+    .TopBest{
+         .ClassAdd{
+            color: rgba(2, 85, 149, 1);
+            position: relative;
+            font-weight: 600;
+ }
+    }
+}
+ .ClassAdd::after{
+    content: "";
+    height: 2px;
+    background-color: rgba(2, 85, 149, 1) ;
+    position: absolute;
+    left: 0;
+    top: 33px;
+    animation: line  0.5s ease forwards;
+ }
+ @keyframes line{
+    from{
+        width: 0;
+    }
+    to{
+     width: 178px;    
+    }
+ }
+ @media (max-width:1200px) {
+    .Best{
+        .CardBest{
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center
+        }
+        .TopBest{
+            flex-wrap: wrap;
+             gap: 30px;
+            p{
+                font-size: 16px;
+            }
+        }
+        .CardBest{
+            img{
+                max-width: 320px;
+                height: 235px;
+
+            }
+        }
+    }
+     @keyframes line{
+    from{
+        width: 0;
+    }
+    to{
+     width: 158px;    
+    }
+ }
+ }

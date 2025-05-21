@@ -1,0 +1,28 @@
+.AllCardWork{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.color{
+    background-color: rgba(2, 85, 149, 1);
+     border-radius: 15px;
+        .CardWork{
+
+            P , h3{
+                color:  rgba(255, 255, 255, 1);
+            }
+            .svg{
+               color:  rgba(255, 255, 255, 1); 
+            }
+            
+        }
+}
+
+@media (max-width:992px) {
+    .AllCardWork{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+}
