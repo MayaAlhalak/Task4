@@ -6,9 +6,12 @@
         justify-content: start;
         gap: 50px;
         p{
+        width: 180px;
         font-weight: 400;
         font-size: 18px;
         line-height: 100%;
+        cursor: pointer;
+         white-space: nowrap;
         }
     }
     .CardBest{
@@ -53,6 +56,7 @@
             color: rgba(2, 85, 149, 1);
             position: relative;
             font-weight: 600;
+          /* width: 185px; */
  }
     }
 }
@@ -81,18 +85,24 @@
             justify-content: center
         }
         .TopBest{
-            flex-wrap: wrap;
+            overflow-x: scroll;
              gap: 30px;
-            p{
+             p{
+                width: 180px;
+                height: 26px;
+             }
+             .ClassAdd{
+                width: 158px;
                 font-size: 16px;
+             }
             }
-        }
         .CardBest{
             img{
                 max-width: 320px;
                 height: 235px;
 
             }
+            
         }
     }
      @keyframes line{
@@ -103,4 +113,7 @@
      width: 158px;    
     }
  }
+ .ClassAdd::after{
+                top: 27px;
+            }
  }

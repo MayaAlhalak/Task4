@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from 'react'
+import {  useState } from 'react'
 import Title from '../Title/Title'
 import './Best.css'
 
@@ -36,27 +36,12 @@ function Best() {
 
   const [add, setAdd] = useState<number>(0)
   const [namep, setNamep] = useState<string>('Residential')
-  const [X, setX] = useState<number>(4)
+
 
   const OnClick = (index: number, key: string) => {
     setAdd(index)
     setNamep(key)
   }
-
-  useEffect(() => {
-    const NumberCard = () => {
-      if (window.innerWidth < 600) {
-        setX(2)
-      } else {
-        setX(4)
-      }
-    }
-
-    NumberCard()
-    window.addEventListener('resize', NumberCard)
-    return () => window.removeEventListener('resize', NumberCard)
-  }, [])
-
   return (
     <section className='padding margin'>
       <Title
@@ -65,7 +50,7 @@ function Best() {
       />
       <div className='Best'>
         <div className='TopBest'>
-          {DatePargraph.slice(0, X).map((item, index) => (
+          {DatePargraph.map((item, index) => (
             <p
               onClick={() => OnClick(index, item.key)}
               key={index}
